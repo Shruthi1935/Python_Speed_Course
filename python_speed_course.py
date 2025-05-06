@@ -64,9 +64,50 @@ print()
 # _____________________________________________________________________________________________________________________________
 
 # STRING METHODS
+# class.xyz CALLED METHODS
+# xyz() CALLED IN-BUILT FUNCTIONS
 
 greeting = "Hey!"
 print(type(greeting))
+print(greeting.upper())
+print(greeting.lower())
+print(greeting.capitalize())
+
+print(len(greeting))
+print(greeting.count('h'))
+print(greeting.lower().count('h'))
+print(greeting.lower().count('H'))
+print()
+
+x = "Hey!"
+y = 3
+z = "Yes!"
+print(x * y)
+print(x + z)
+print()
+
+# _____________________________________________________________________________________________________________________________
+
+# CONDITIONAL OPERATORS
+
+x = "hey"
+y = "hey"
+z = "heyy"
+print(x == y)
+print(x == z)
+print()
+
+print('a' > 'Z')
+print(ord('a'))
+print(ord('Z'))
+print()
+
+print(2 > 3)
+print(2 >= 2)
+print(2 < 3)
+print(2 <= 2)
+print(2 == 2)
+print(2 != 2)
 
 
 
