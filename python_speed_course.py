@@ -248,6 +248,52 @@ while counter < 10:
     counter = counter + 1
     print(counter)
 
+print()
+
+# _____________________________________________________________________________________________________________________________
+
+# SLICE OPERATOR
+# [start:stop:step]
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+sliced = arr[1:6:1]
+print(sliced)
+
+sliced = arr[1:6:2]
+print(sliced) 
+
+# reversing a list and string
+sliced = arr[::-1]
+print(sliced) 
+
+word = 'apple'
+sliced = word[::-1]
+print(sliced) 
+
+print()
+
+# _____________________________________________________________________________________________________________________________
+
+# FUNCTIONS
+
+def func(x, y):
+    print ('this is a function that takes', x, 'and', y, 'as parameters' )
+    print()
+
+print(func(1, 2))
+
+def addition(x,y,z):
+    value = x + y + z
+    return value
+
+print(addition(2,4,6))
+print()
+
+# _____________________________________________________________________________________________________________________________
+
+
+
 
 
 
