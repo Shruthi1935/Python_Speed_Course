@@ -108,6 +108,152 @@ print(2 < 3)
 print(2 <= 2)
 print(2 == 2)
 print(2 != 2)
+print()
+
+# _____________________________________________________________________________________________________________________________
+
+# CONDITIONALS
+
+x = 5
+y = 8
+z = 11
+
+value_1 = x == y # false
+value_2 = y > x  # true
+value_3 = z + 1 > x + 5  # true
+
+print(value_1)
+print(value_2)
+print(value_3)
+
+value_4 = value_1 or value_2  # this equals to true if one of the two values is true
+value_5 = value_1 and value_2 # this equals to true if only both values are true
+value_6 = not value_2         # flips the actual value 
+
+print(value_4)
+print(value_5)
+print(value_6)
+print()
+
+# _____________________________________________________________________________________________________________________________
+
+# IF / ELSE IF / ELSE
+
+name = input("Enter name: ")
+
+if (name == "shruthi"):
+    print("oh hey lovely!")
+    print()
+
+elif (name == "vaibhav"):
+    print("oh hey monkey boy")
+    print()
+
+elif (name == "latha" or name == "srinivas"):
+    print("oh hi beautiful people")
+    print()
+
+else:
+    print("oh its you ", name)
+    print()
+
+# _____________________________________________________________________________________________________________________________
+
+# LISTS AND TUPLES
+# len(), .append(), .extend([]), .pop()
+
+x = [4, True, "hey"]  # unordered lists [1,2,3] you can modify them AND tuples (1,2,3) cannont be modified as they are immutable
+y = "beautiful"
+
+print(x)
+print(y)
+
+x_length = len(x)
+y_length = len(y)
+print(x_length)
+print(y_length)
+
+x.append("apples")
+print(x)
+
+x.extend(['oranges', 'banannas', 'strawberries'])
+print(x)
+
+x.pop()  # removes the last element from the list, then prints the list 
+print(x)
+
+x.pop(0) # removes the 0th element from the list
+print(x)
+
+x.pop(2)
+print(x)
+
+zeroth = x[0]
+first = x[1]
+second = x[2]
+third = x[3]
+print(zeroth, first, second, third)
+
+print()
+
+# _____________________________________________________________________________________________________________________________
+
+# FOR LOOPS 
+# start, stop, step
+
+# stop
+for i in range(10):  # stop @ 10
+    print(i)
+
+print()
+    
+# start, stop
+for i in range(5,10):  # start @ 5, stop @ 10
+    print(i)
+
+print()
+
+# start, stop, step
+for i in range(5, 20, 5):  # start @ 5, stop @ 20, step by 5
+    print(i)
+
+print()
+
+# start @ 10, stop @ -1, step by -1
+for i in range(10, -1, -1):
+    print(i)
+print()
+
+for i in [121, 422, 499, 892]:
+    print(i)
+print()
+
+input = [1, 22, 333, 4444, 55555]
+for i in range(len(input)):
+    print(input[i])
+print()
+
+for i, element in enumerate(input):  # printing both elements in the array AND its indexes using enumerate
+    print(i, element)
+print()
+
+# _____________________________________________________________________________________________________________________________
+
+# WHILE LOOPS
+# while condition is true, do the following
+
+counter = 0
+
+while counter < 10: 
+    counter = counter + 1
+    print(counter)
+
+
+
+
+
+
+
 
 
 
